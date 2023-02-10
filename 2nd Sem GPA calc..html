@@ -1,0 +1,100 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>2ND SEM SW GPA CALC</title>
+</head>
+<body>
+    <label for="OOP">OOP</label>
+    <select name="OOP" id="OOP">
+        <option value=4>A+</option>
+        <option value=3.5>A</option>
+        <option value=3>B+</option>
+        <option value=2.5>B</option>
+        <option value=2>C+</option>
+        <option value=1>C</option>
+    </select>
+    <br>
+    <label for="PP">PP</label>
+    <select name="PP" id="PP">
+        <option value=4>A+</option>
+        <option value=3.5>A</option>
+        <option value=3>B+</option>
+        <option value=2.5>B</option>
+        <option value=2>C+</option>
+        <option value=1>C</option>
+    </select>
+    <br>
+    <label for="LAAG">LAAG</label>
+    <select name="LAAG" id="LAAG">
+        <option value=4>A+</option>
+        <option value=3.5>A</option>
+        <option value=3>B+</option>
+        <option value=2.5>B</option>
+        <option value=2>C+</option>
+        <option value=1>C</option>
+    </select>
+    <br>
+    <label for="ISE">ISE</label>
+    <select name="ISE" id="ISE">
+        <option value=4>A+</option>
+        <option value=3.5>A</option>
+        <option value=3>B+</option>
+        <option value=2.5>B</option>
+        <option value=2>C+</option>
+        <option value=1>C</option>
+    </select>
+    <br>
+    <label for="PS">PS</label>
+    <select name="PS" id="PS">
+        <option value=4>A+</option>
+        <option value=3.5>A</option>
+        <option value=3>B+</option>
+        <option value=2.5>B</option>
+        <option value=2>C+</option>
+        <option value=1>C</option>
+    </select>
+    <br>
+    <label for="IS-ETHICS">IS-ETHICS</label>
+    <select name="IS-ETHICS" id="IS-ETHICS">
+        <option value=4>A+</option>
+        <option value=3.5>A</option>
+        <option value=3>B+</option>
+        <option value=2.5>B</option>
+        <option value=2>C+</option>
+        <option value=1>C</option>
+    </select>
+    <br>
+    <label for="OOPp">OOP PRAC</label>
+    <select name="OOPp" id="OOPp">
+        <option value=4>A+</option>
+        <option value=3.5>A</option>
+        <option value=3>B+</option>
+        <option value=2.5>B</option>
+        <option value=2>C+</option>
+        <option value=1>C</option>
+    </select>
+    <br>
+    <button onclick="check()">Check</button>
+
+    <script>
+        function check(){
+            let OOP = document.getElementById('OOP').value*3;
+            let PP = document.getElementById('PP').value*3;
+            let LAAG = document.getElementById('LAAG').value*3;
+            let ISE = document.getElementById('ISE').value*3;
+            let PS = document.getElementById('PS').value*2;
+            let IS = document.getElementById('IS-ETHICS').value*2;
+            let OOPp = document.getElementById('OOPp').value*1;
+            let qp=0;
+            qp = OOP + PP + LAAG + ISE + PS + IS + OOPp;
+        
+            let gpa = qp/17;
+            alert("GPA = " + gpa);
+        }
+    </script>
+</body>
+</html>
